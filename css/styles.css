@@ -1,0 +1,148 @@
+
+body{
+    background-color: #edf2f4;
+}
+
+
+#logo {
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 2px 5px black;
+    font-size: 1.8rem;
+    color: #fffaff;
+
+}
+
+nav{
+    background: #B2FEFA;
+    background: -webkit-linear-gradient(to right, #0ED2F7, #B2FEFA);
+    background: linear-gradient(to right, #0ED2F7, #B2FEFA);
+    ;
+    border-bottom: 1px solid black;
+
+}
+
+.navbar-light .navbar-nav .nav-link ,.tel {
+    color: #fffaff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    text-shadow: 0px 0px 5px black;
+}
+
+.bi {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-bottom: 7px;
+    margin-right: 1px;
+     
+    /* icones nav bar */
+}
+nav .bi{
+    filter: drop-shadow(2px 2px 9px rgb(0 0 0 / 0.4));
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    /* mudando rgb para conseguir o branco no menu hamburguer */
+}
+
+.navbar-light .navbar-toggler {
+    border: 1px solid #fffaff;
+
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fffaff;
+    font-size: 1.3rem;
+}
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #fffaff;
+}
+
+
+
+.card {
+    background: #b92b27;
+    background: -webkit-linear-gradient(to right, #1565C0, #b92b27);
+    background: linear-gradient(to right, #1565C0, #b92b27);
+    box-shadow: 0px 0px 20px 0px black;
+    width: 18rem;
+}
+ .plano, .fibra{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 4rem;
+    padding: 2rem;
+    padding-bottom: 0.7rem;
+    color: #fffaff;
+    text-shadow: 5px 5px 5px black;
+}
+
+.card .fibra{
+    color: #04cefc; 
+    line-height: 0rem; 
+}
+.card button,.card button:focus{
+    font-family: 'Oswald', sans-serif;
+    background-color: #fffaff;
+    border: none;
+    color: #303036;
+    text-shadow: 0px 0px 1px black;
+    box-shadow: 0px 0px 20px 0px black;
+}
+.card button:hover{
+    background-color: #fffaff;
+    border: none;
+    color: #303036;
+    box-shadow: 0px 5px 20px 5px black;
+    transform: scale(1.1);
+}
+
+.secao {
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    text-shadow: 3px 2px 5px #2bb3d5;
+    border-top: 2px solid #303036;
+    letter-spacing: 0.6rem;
+    width: 100%;
+    text-align: center;
+}
+#info-contatos span,#form-contatos label, p{
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    
+    
+}
+p{
+    font-size: 1.1rem;
+    text-align: center;
+}
+#assinante-aqui a{
+    text-align: center;
+    color: #fffaff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 2px black;
+    
+}
+
+#btn-assinante{
+    background-color:black;
+    background: #B2FEFA;
+    background: -webkit-linear-gradient(to right, #0ED2F7, #B2FEFA);
+    background: linear-gradient(to right, #0ED2F7, #B2FEFA);
+    ; 
+    box-shadow: 0px 0px 10px 0px black;
+    
+}
+#btn-assinante .bi{
+    width: 1.7rem;
+    height: 1.7rem;
+    text-shadow: 10px 10px 10px black;
+    filter: drop-shadow(2px 2px 9px rgb(0 0 0 / 0.4));
+}
+#btn-assinante:hover{
+   transform: scale(1.1)
+    
+}
