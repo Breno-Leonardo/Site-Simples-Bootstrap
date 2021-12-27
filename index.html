@@ -101,7 +101,7 @@
   <div id="planos-aqui" class="container  mt-4">
     <div class="row  ">
       <div class="  col-12  d-flex justify-content-center  ">
-        <span class="secao pt-2 animacao ">PLANOS</span>
+        <span class="secao pt-2 animacao neon">PLANOS</span>
       </div>
     </div>
   </div>
@@ -142,7 +142,7 @@
   <div id="contatos-aqui" class="container  mt-4">
     <div class="row ">
       <div class=" col-12  d-flex justify-content-center ">
-        <span class="secao pt-2 animacao">CONTATO</span>
+        <span class="secao pt-2 animacao neon">CONTATO</span>
       </div>
     </div>
   </div>
@@ -205,7 +205,7 @@
   <div id="assinante-aqui" class="container d-flex justify-content-center flex-column mt-4 animacao">
     <div class="row  ">
       <div class=" col-12  d-flex justify-content-center flex-column align-items-center ">
-        <span class="secao pt-2">Central Do Assinante</span>
+        <span class="secao pt-2 neon">Central Do Assinante</span>
         <button id="btn-assinante" class="btn my-4 mx-1 " type="button">
           <a class="nav-link" href="assinante.html">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -264,6 +264,23 @@
   });
 
   //parte da animacao dos itens quando aparecem na tela
+
+  // Debounce do Lodash
+debounce = function(func, wait, immediate) {
+	var timeout;
+	return function() {
+		var context = this, args = arguments;
+		var later = function() {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		};
+		var callNow = immediate && !timeout;
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (callNow) func.apply(context, args);
+	};
+};
+(function () {//IIEF
   var target = $('.animacao')
   var animacao = 'animacao-inicio'
   offset=$(window).height() *0.75// parte da tela que comeca a aparecer
@@ -285,6 +302,24 @@
   $(document).scroll(function () {
    animacaoScroll()
   })
+}()) 
+
+// efeito neon da logo
+var target = $('.neon')
+console.log(target)
+    function pulsando() {
+        setInterval(() => {
+            target.removeClass('logo-animacao2')
+            target.addClass('logo-animacao')
+        }, 1000);
+        setInterval(() => {
+                target.removeClass('logo-animacao')
+                target.addClass('logo-animacao2')
+
+        }, 2000);
+
+    }
+    $(document).keypress(pulsando())
 </script>
 
 </html>

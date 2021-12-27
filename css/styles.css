@@ -157,9 +157,23 @@ p{
 .animacao{
     opacity: 0;
     transform: translate3d(0px, -50px, 0px);
-    transition: 2s;
+    transition: 2.1s;
 }
 .animacao-inicio{
     opacity: 1;
     transform: translate3d(0, 0, 0);
+}
+
+.logo-animacao2{
+    text-shadow: 0px 0px 50px #00bbff;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #00bbff;
+    transition:1s;
+    
+}
+.logo-animacao{
+    text-shadow: 0px 0px 10px #00bbff;
+    -webkit-text-stroke-width: 0.25px;
+    -webkit-text-stroke-color: #00bbff;;
+    transition:1s;
 }
