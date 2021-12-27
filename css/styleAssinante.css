@@ -7,7 +7,7 @@ html {
    background-color: #edf2f4;
 } 
 body {
-	background: linear-gradient(-45deg, #2980B9, #6DD5FA, #FFFFFF);
+	background: linear-gradient(-45deg, #ffffff, #00bbff,#000000);
 	background-size: 400% 400%;
 	animation: gradient 7s ease infinite;
 }
@@ -24,15 +24,20 @@ body {
 	}
 }
 
-#logo {
-    font-family: 'Oswald', sans-serif;
-    text-shadow: 2px 2px 5px black;
-    font-size: 3rem;
-    color: #fffaff;
-    text-align: center;
-    margin-bottom: 2rem;
-
+.logo-animacao2{
+    text-shadow: 0px 0px 50px #00bbff;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #00bbff;
+    transition:1s;
+    
 }
+.logo-animacao{
+    text-shadow: 0px 0px 10px #00bbff;
+    -webkit-text-stroke-width: 0.25px;
+    -webkit-text-stroke-color: #00bbff;;
+    transition:1s;
+}
+
 .card {
     background: white;
     box-shadow: 3px 3px 2px black;
@@ -49,7 +54,7 @@ body {
     padding: 2rem;
     padding-bottom: 0.7rem;
     
-    text-shadow: 0px 0px 10px #6DD5FA;
+    
 }
 .card label{
     font-family: 'Oswald', sans-serif;

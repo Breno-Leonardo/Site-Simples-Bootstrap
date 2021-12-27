@@ -1,6 +1,8 @@
 
 body{
     background-color: #edf2f4;
+    
+    
 }
 
 
@@ -18,7 +20,12 @@ nav{
     background: linear-gradient(to right, #0ED2F7, #B2FEFA);
     ;
     border-bottom: 1px solid black;
+    
+    
 
+}
+nav #logo{
+    opacity: 1;
 }
 
 .navbar-light .navbar-nav .nav-link ,.tel {
@@ -145,4 +152,14 @@ p{
 #btn-assinante:hover{
    transform: scale(1.1)
     
+}
+
+.animacao{
+    opacity: 0;
+    transform: translate3d(0px, -50px, 0px);
+    transition: 2s;
+}
+.animacao-inicio{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
 }
