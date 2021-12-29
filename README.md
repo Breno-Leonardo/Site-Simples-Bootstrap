@@ -1,6 +1,6 @@
 # Site Bootstrap
 
-Projeto realizado com o intuito de utilizar as ferramentas do Bootstrap e ser rápido.
+Projeto realizado com o intuito de utilizar as ferramentas do Bootstrap e ser um projeto rápido e simples.
 
 Site: https://breno-leonardo.github.io/Site-Bootstrap/
 
