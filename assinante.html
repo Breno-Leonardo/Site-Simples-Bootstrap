@@ -39,7 +39,7 @@
                             <div class="  col-12  d-flex justify-content-center flex-column ">
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label pb-0">CPF: </label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    <input type="number" class="form-control" id="campoCpf" >
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label pb-0">Senha: </label>
@@ -75,6 +75,15 @@
 
     }
     $(document).keypress(pulsando())
+
+    //limitar-numeros
+    var target2 = $('#campoCpf')
+    target2.on('keypress', (e) => {
+        console.log(e.key)
+        if(target2.val().length==11  | isNaN(e.key) ){   //isNaN(e.key) pois mesmo com o type number a letra "e" ainda vai 
+            e.preventDefault()
+        }
+    })
 </script>
 
 </html>
