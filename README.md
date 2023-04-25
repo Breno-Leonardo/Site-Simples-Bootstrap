@@ -2,7 +2,7 @@
 
 Projeto realizado com o intuito de utilizar as ferramentas do Bootstrap e ser um projeto rápido e simples.
 
-Site: https://breno-leonardo.github.io/Site-Bootstrap/
+## Site: https://breno-leonardo.github.io/Website-Using-Bootstrap/
 
 ![image](https://user-images.githubusercontent.com/58619307/147367886-bfba2125-7da1-4f35-96f2-b710750b5e8b.png)
 
